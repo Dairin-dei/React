@@ -1,0 +1,52 @@
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card {
+  width: 450px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 0px 2px #7adbec, 12px -8px 28px 0px rgb(58 50 157 / 10%),
+    0 10px 10px rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+
+.card__wrapper {
+  display: flex;
+  margin: 10px 0;
+}
+
+.card__image {
+  width: 120px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 0px 2px #6e27f3, 4px -4px 4px 2px rgba(60, 60, 61, 0.589),
+    0 10px 10px rgb(0 0 0 / 10%);
+}
+
+.card__content {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.card__name {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.card__author {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.card__published {
+  font-size: 20px;
+  line-height: 40px;
+  font-style: italic;
+}

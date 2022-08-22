@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-about-us {
+  margin: 0 auto;
+  margin-top: 30%;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}

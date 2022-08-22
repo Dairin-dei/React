@@ -1,0 +1,19 @@
+.header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #6e27f3;
+}

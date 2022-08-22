@@ -1,0 +1,19 @@
+.main-page {
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.modal-active {
+  overflow: hidden;
+}
+
+.main-loading {
+  width: 200px;
+  height: 200px;
+  margin-top: 200px;
+}
+
+.no-data {
+  font-size: 26px;
+}

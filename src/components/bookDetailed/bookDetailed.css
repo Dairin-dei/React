@@ -1,0 +1,129 @@
+.wrapper {
+  display: flex;
+  margin: 10px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.outside {
+  flex-direction: row;
+  max-height: 600px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 0px 2px #7adbec, 12px -8px 28px 0px rgb(58 50 157 / 10%),
+    0 10px 10px rgb(0 0 0 / 10%);
+}
+
+.inside {
+  flex-direction: row;
+}
+
+.modal__book {
+  width: 45vw;
+}
+.modal__header {
+  font-size: 22px;
+  font-style: italic;
+  color: #6e27f3;
+}
+
+.modal__book-image {
+  width: 200px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 0px 2px #6e27f3, 4px -4px 4px 2px rgba(60, 60, 61, 0.589),
+    0 10px 10px rgb(0 0 0 / 10%);
+}
+
+.modal__book-content {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.modal__book-name {
+  margin: 10px 0 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.modal__book-author {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.modal__book-published {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+.modal__book-annotation {
+  padding: 20px 5px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.modal__description {
+  width: 35vw;
+  border-left: 1px solid #000000;
+}
+
+.modal__author-content {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.modal__author-name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.modal__author-dates {
+  font-size: 20px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+.modal__author-bio {
+  padding: 20px 5px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    height: 80vh;
+  }
+  .modal__close-box {
+    margin-left: 75vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .outside {
+    flex-direction: column;
+  }
+
+  .modal__book {
+    width: 100%;
+  }
+
+  .modal__author {
+    width: 100%;
+    border-left: none;
+  }
+
+  .modal__book-image {
+    width: 120px;
+    height: 200px;
+  }
+}

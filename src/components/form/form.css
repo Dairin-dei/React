@@ -1,0 +1,239 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 0px 2px #7adbec, 12px -8px 28px 0px rgb(58 50 157 / 10%),
+    0 10px 10px rgb(0 0 0 / 10%);
+}
+
+.error1,
+.error2,
+.error3 {
+  font-size: 16px;
+  color: red;
+}
+
+.error1 {
+  margin-left: 100px;
+}
+.error2 {
+  margin-left: 135px;
+}
+.error3 {
+  margin-left: 80px;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 10px;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+label {
+  width: calc(100% - 20px);
+  margin-top: 5px;
+  height: 55px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #6e27f3;
+}
+
+.input {
+  width: calc(100% - 7px);
+  height: 30px;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #000000;
+  box-shadow: 1px -1px 1px 1px #6e27f3, 2px -2px 3px 3px rgba(60, 60, 61, 0.589);
+}
+
+.input-publisher {
+  width: 100%;
+}
+
+.form__book-date {
+  padding: 1px 2px;
+}
+
+/*checkbox*/
+.form__book-like-label {
+  display: inline-block;
+  margin-top: 10px;
+  width: calc(100% - 50px);
+  height: 35px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+
+  user-select: none;
+}
+.form__book-like-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form__book-like-label input:checked ~ .form__book-like-checkmark {
+  background-color: #fff;
+}
+.form__book-like-label input:checked ~ .form__book-like-checkmark:after {
+  opacity: 1;
+}
+.form__book-like-label:hover input ~ .form__book-like-checkmark {
+  background-color: #eee;
+}
+.form__book-like-label:hover input:checked ~ .form__book-like-checkmark {
+  background-color: #fff;
+}
+.form__book-like-label .form__book-like-checkmark {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #6e27f3;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.form__book-like-label .form__book-like-checkmark:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 12px;
+  height: 12px;
+  border: solid #6e27f3;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.form__book-like-label .form__book-like-text {
+  color: #6e27f3;
+  line-height: 30px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/*radio*/
+
+.form__book-read-label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 120px;
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #000000;
+  box-shadow: 1px -1px 1px 1px #6e27f3, 2px -2px 3px 3px rgba(60, 60, 61, 0.589);
+}
+.radio {
+  height: 30px;
+}
+
+.radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+.radio__text {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+.radio__text:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #cdd1da;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio__text:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #6e27f3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.2s;
+}
+.radio input:checked + .radio__text:after {
+  opacity: 1;
+}
+.radio input:focus + .radio__text:before {
+  box-shadow: 0 0 0 3px rgba(60, 60, 61, 0.589);
+}
+
+/*file*/
+
+.input-file {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.input-file-label {
+  width: 160px;
+  height: 50px;
+  margin-top: 10px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.input-file-label .title {
+  color: #6e27f3;
+  transition: 200ms color;
+}
+.input-file-label:hover {
+  border: 2px solid #000;
+}
+.input-file-label:hover i,
+.input-file-label:hover .title {
+  color: #000;
+}
+
+.uploaded {
+  background-color: aquamarine;
+}
+
+/*submit*/
+
+.button {
+  align-self: center;
+}
+
+.form__book-submit {
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  background-color: #6e27f3;
+  color: #ffffff;
+}

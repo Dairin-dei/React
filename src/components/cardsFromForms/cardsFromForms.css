@@ -1,0 +1,9 @@
+.section-cards {
+  min-height: 50vh;
+  min-width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px;
+}
